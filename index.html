@@ -1,184 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granja Shalom BB</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Granja Shalom</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>Granja <span>Shalom</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#principios">Pincipios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#trabajo">Trabajo</a></li>
-                <li><a href="#comunidad">Comunidad</a></li>
-                <li><a href="#registrarme" class="btn">@Registrarme</a></li>
-            </ul>
-        </nav>
+      <a href="" class="logo">
+        <img src="images/logo.svg" />
+      </a>
+      <nav>
+        <a href="#principios">Principios</a>
+        <a href="#trabajo">Trabajo</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="/comunidad.html">Comunidad</a>
+        <a href="/registrarme.html" class="btn">
+          <i class="ri-at-line"></i>
+          Registrarme
+        </a>
+      </nav>
     </header>
 
     <section class="hero">
-        <img src="/imagenes/Shalom.jpg" alt="Granja Imagen Principal">
+      <img src="images/Shalom.jpg" alt="Granja Imagen Principal" />
+      <div>
+        <h1>Granja</h1>
+        <h1 class="h1-right">
+          <img src="images/sheet.svg" />
+          <span>Shalom</span>
+        </h1>
+      </div>
     </section>
 
-    <section id="principios" class="content">
-        <div class="section">
-            <div class="text-content">
-                <h2>Principios</h2>
-                <p>   
-                La agroecología es un paradigma que promueve el diseño y gestión de sistemas de
-                producción agropecuaria, recolección, pesca, elaboración, comercialización, consumo y
-                comensalidad, económicamente viables, socialmente justos y ambientalmente
-                sostenibles, caracterizados por una mayor resiliencia socio-ecológica y orientados a
-                fortalecer el buen vivir de toda la sociedad. Para más info te dejo el siguiente link: 
-                <a href="https://www.youtube.com/watch?v=653MRe7g7jI&t=67s" target="_blank">Marco conceptual y Principios en Argentina</a>
-                </p>
+    <main>
+      <div class="container">
+        <!-- principios -->
+        <section id="principios">
+          <article>
+            <div id="info">
+              <h1>
+                <img src="images/sheet.svg" id="sheet-img-sections" />
+                Principios
+              </h1>
+              <p>
+                La agroecología es un enfoque que transforma la producción
+                agrícola y ganadera en sistemas sostenibles y justos. Promueve
+                prácticas que benefician el medio ambiente y mejoran la calidad
+                de vida de las comunidades, fomentando una mayor resiliencia y
+                bienestar para todos. ¡Únete a este cambio hacia un futuro más
+                sostenible!
+              </p>
             </div>
-            <img class="img" src="/imagenes/principios.jpg" alt="Principios de la Granja">
-        </div>
-    </section>
-    <section id="nosotros" class="content">
-        <div class="section">
-            <div class="text-content">
-                <h2>Nosostros</h2>
-                <p>Somos una Familia productora agroecológica que nos hemos dedicado por mas de 
-                    diez años a cultivar diversidad de verduras, hortalizas, legumbres y frutas siempre en 
-                    espacios arrendados próximos a la ciudad de Bahía Blanca. 
-                    En la actualidad, hemos creado una huerta en el patio de nuestra casa, donde cultivamos 
-                    alimentos frescos y saludables que alimentan a nuestra familia. El excedente de nuestras 
-                    cosechas lo llevamos a la Feria Agroecológica, un espacio donde compartimos nuestra pasión 
-                    por la agroecología y nos conectamos con otros productores y consumidores. 
-                    Cultivar nuestros propios alimentos es de vital importancia, ya que nos garantiza acceso a 
-                    productos frescos, nutritivos y libres de químicos. Este contacto directo con la tierra no 
-                    solo promueve un estilo de vida más saludable, sino que también nos enseña la relevancia de 
-                    cuidar nuestro entorno y los recursos naturales.
-                    Nuestro objetivo es inspirar a otros a adoptar prácticas agroecológicas, fomentando así una 
-                    mayor conciencia sobre la alimentación y su impacto en la salud y el medio ambiente. Cada 
-                    paso de este camino ha estado impregnado de amor, dedicación y un firme compromiso con la 
-                    tierra que nos sustenta. Creemos que, al cultivar con responsabilidad y pasión, podemos 
-                    contribuir al bienestar de nuestra comunidad y al futuro sustentable del planeta.
-                </p>
+            <img src="images/resources/1.jpg" id="image-section" />
+          </article>
+        </section>
+        <!-- trabajo -->
+        <section id="trabajo">
+          <article>
+            <div id="info">
+              <h1>
+                <img src="images/sheet.svg" id="sheet-img-sections" />
+                Trabajo
+              </h1>
+              <p>
+                Junto a la Fundación Huella Verde, estamos creando Huertas
+                Urbanas en nuestra ciudad. Agradezco a Cecilia Buschiazzo por
+                esta oportunidad de promover la agroecología. Nuestro objetivo
+                es demostrar que se puede cultivar en cualquier espacio. Con
+                esfuerzo, ¡los frutos florecerán y concientizaremos a la
+                comunidad bahiense!
+              </p>
             </div>
-            <img src="/imagenes/flia.jpg" alt="Trabajo en la Granja">
-        </div>
-    </section> 
-    <section id="trabajo" class="content">
-            <div class="section">
-                <div class="text-content">
-                    <h2>Trabajo</h2>
-                    <p> En la actualidad junto a la Fundación Huella Verde llevamos adelante Huertas Urbanas en 
-                        dos espacios diferentes de la ciudad. Quiero agradecer personalamente a Cecilia Buschiazzo por 
-                        esta hermosa oportunidad que nos brinda para seguir trabajando por la Agroecología.
-                        Nuestro objetivo es trasmitir los conocimientos del desarrollo integral de una huerta y demostrar
-                        que es posible tener una huerta sin importar el espacio que dispongamos. Con tiempo, trabajo y 
-                        preserverancia los frutos florecerán.
-                        Y asi lograr mayor concientizacion en la comunidad bahiense desde estos espacios huerteros.
-                        Para conocer el trabajo que estamos realizando y queres ayudarnos accede al instagram de la 
-                        Fundación Huella Verde:  
-                        <a href="https://www.instagram.com/huellaverdefundacion/" target="_blank">HuellaVerdeFundacion</a>
-                        <div>
-                            <p>Para conocer el espacio de una de las Huertas comunitarias accede al instagram de La Nave: 
-                            <a href="https://www.instagram.com/lanavecirco/" target="_blank">LaNaveCirco</a></p>
-                        </div>
-                        <div>
-                            <p>Por más espacios en los cuales cultivar nuestros propios alimentos con nuestras propias semillas sigan
-                            creciendo en nuestra comunidad.</p>
-                        </div>
-                    </p>
-                </div>
-                <img src="/imagenes/trabajo.jpg" alt="Sobre Nosotros">
+            <img src="images/resources/2.jpg" id="image-section" />
+          </article>
+        </section>
+        <!-- nosotros -->
+        <section id="nosotros">
+          <article>
+            <div id="info">
+              <h1>
+                <img src="images/sheet.svg" id="sheet-img-sections" />
+                Sobre Nosotros
+              </h1>
+              <p>
+                Somos una familia dedicada a la producción agroecológica en
+                Bahía Blanca. Cultivamos alimentos frescos en nuestra huerta y
+                compartimos el excedente en la Feria Agroecológica. Creemos en
+                la importancia de cultivar nuestros propios alimentos para
+                asegurar productos nutritivos y libres de químicos, y queremos
+                inspirar a otros a hacer lo mismo. ¡Los invitamos a conocernos a
+                través de nuestros videos!
+              </p>
             </div>
-    </section>
-    <section id="comunidad" class="content">
-        <div class="section">
-            <div class="text-content">
-                <h2>Comunidad</h2>
-                <p>La comunidad bahiense en agroecología se articula en torno a varios espacios comprometidos con 
-                la promoción de prácticas sustentables, la soberanía alimentaria y el fortalecimiento de la 
-                agricultura familiar. Dos de estos espacios claves son la Feria Agroecológica y el Espacio de 
-                Trabajo en Soberanía Alimentaria (ETSA).
-                </p>
-                <div>
-                    <h3>Feria Agroecológica del Parque Boronat</h3>
-                    <p> La Feria de Agroecología de Bahía Blanca es un espacio donde los productores locales ofrecen 
-                        una gran variedad de productos frescos, orgánicos y libres de agroquímicos. En esta feria se 
-                        pueden encontrar frutas, verduras, conservas, panificados, hierbas medicinales y otros alimentos    
-                        saludables, todos producidos bajo principios agroecológicos. Esta iniciativa no solo busca promover 
-                        el consumo responsable y local, sino también conectar a los consumidores con los productores, 
-                        creando un vínculo directo que fortalece las economías regionales y fomenta prácticas más justas 
-                        y sostenibles. Para más información les dejo el instagram:                         <a href="https://www.instagram.com/feriaagroecologicabb/" target="_blank">FeriaAgroecologicabb</a>
-                    </p>
-                </div> 
-                <div>
-                    <h3>Espacio de Trabajo en Soberanía Alimentaria (ETSA)</h3>
-                    <p>
-                        Por otro lado, el ETSA (Equipo de Trabajo en Soberanía Alimentaria) es un grupo que trabaja 
-                        activamente para promover la soberanía alimentaria, la agroecología y la agricultura familiar 
-                        en Bahía Blanca y la región. El ETSA tiene como objetivo empoderar a pequeños productores y 
-                        generar conciencia sobre la importancia de consumir alimentos locales y de temporada, a través 
-                        de talleres, cursos y charlas abiertas a toda la comunidad. Cabe destacar que trabajan con 
-                        instituciones educativas concientizando a las futuras generaciones. Para más información les 
-                        dejo el instagram: 
-                        <a href="https://www.instagram.com/etsalimentaria/" target="_blank">Etsa</a>
-                    </p>
-                </div> 
-                <p>
-                    Ambos espacios se complementan, ya que mientras la feria brinda una plataforma directa para la 
-                    comercialización de productos agroecológicos, el ETSA impulsa el desarrollo de un modelo 
-                    alimentario más soberano y justo, donde la comunidad tenga el control sobre lo que produce y 
-                    consume.
-                </p>   
-            </div>
-            <div class="imgs"> 
-                <div>
-                 <img src="/imagenes/Feria.jpg" alt="Feria">
-                </div>
-                <div>
-                    <img src="/imagenes/ETSA.jpg" alt="Etsa">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="registrarme" class="container">
-        <div class="form-container">
-            <h2>Regístrate para recibir información</h2>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" placeholder="Introduce tu nombre" required>
-                    <small>Error: El nombre debe tener al menos 3 caracteres.</small>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Introduce tu email" required>
-                    <small>Error: Introduce un email válido.</small>
-                </div>
-                <button type="submit">Registrarse</button>
-            </form>
-            <div id="successMessage" class="hidden">¡Inscripción exitosa, Shalom!</div>
-        </div>
-    </section>
+            <img src="images/resources/3.jpg" id="image-section" />
+          </article>
+        </section>
+      </div>
+    </main>
+
     <footer>
-        <p>© Granja Shalom | 2024 | Derechos reservados</p>
-        <div class="socials">
-            <p>
-                <a href="https://www.instagram.com/granjashalombb/" target="_blank">
-                    <i class="ri-instagram-line"></i>
-                </a>
-                @granjashalombb |
-                <a href="https://www.facebook.com/profile.php?id=100064921710646&locale=es_LA" target="_blank">
-                    <i class="ri-facebook-circle-line"></i> 
-                </a>
-                Granja Shalom
-            </p>
-        </div>
+      <p>© Granja Shalom | 2024 | Derechos reservados</p>
+      <nav>
+        <a href="https://www.instagram.com/granjashalombb/" target="_blank">
+          <i class="ri-instagram-line"></i>
+          @granjashalombb
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100064921710646&locale=es_LA"
+          target="_blank"
+        >
+          <i class="ri-facebook-circle-line"></i>
+          Granja Shalom
+        </a>
+      </nav>
     </footer>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>

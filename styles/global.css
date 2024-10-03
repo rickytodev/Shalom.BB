@@ -1,0 +1,25 @@
+/* importación de la fuente */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* importación de los iconos */
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+}
+
+/* configuración del html dentro del scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
