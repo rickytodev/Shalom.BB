@@ -1,0 +1,30 @@
+@media (max-width: 1000px) {
+  .hero {
+    min-height: auto;
+
+    & div {
+      & h1 {
+        -webkit-text-stroke: 3px #1ed760;
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    & .container {
+      & section {
+        & article {
+          gap: 20px;
+          flex-direction: column;
+
+          & #image-section {
+            width: auto;
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,4 +22,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: rgb(255, 254, 255);
+  opacity: 1;
+  background-image: radial-gradient(rgb(213, 213, 213) 1px, transparent 1px),
+    radial-gradient(rgb(213, 213, 213) 1px, rgb(255, 254, 255) 1px);
+  background-size: 74px 74px;
+  background-position: 0px 0px, 37px 37px;
 }

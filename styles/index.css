@@ -1,30 +1,25 @@
 /* Cabecera */
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 65px;
-  background-color: white;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
   overflow: hidden;
   z-index: 1000;
 
-  & .logo h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-
   & nav {
     display: flex;
+    width: 100%;
+    max-width: 1200px;
     justify-content: end;
     align-items: center;
     gap: 30px;
 
     & a {
-      color: black;
+      color: white;
       font-weight: 600;
       text-decoration: none;
       position: relative;
@@ -32,11 +27,11 @@ header {
       & div {
         position: absolute;
         width: 0;
-        height: 2px;
+        height: 3px;
         background-color: #1ed760;
         bottom: -1px;
         left: 0;
-        transition: all 0.4s ease;
+        transition: all 0.3s ease;
       }
 
       &:hover {
@@ -91,9 +86,10 @@ header {
 .hero {
   display: flex;
   width: 100%;
-  max-height: 750px;
+  min-height: 100%;
   background-color: black;
   position: relative;
+  justify-content: center;
 
   & img {
     opacity: 0.5;
@@ -102,15 +98,16 @@ header {
 
   & div {
     color: white;
-    top: 70px;
-    left: 30px;
+    width: 90%;
+    max-width: 1200px;
+    top: 120px;
     position: absolute;
 
     & h1 {
-      font-size: 120px;
+      font-size: 150px;
       margin: 0;
       color: transparent;
-      -webkit-text-stroke: 3px #1ed760;
+      -webkit-text-stroke: 4px #1ed760;
       letter-spacing: 5px;
       font-family: sans-serif;
     }
@@ -120,6 +117,8 @@ header {
       margin-left: 90px;
       margin-top: 0px;
       color: white;
+      width: fit-content;
+      display: flex;
       -webkit-text-stroke: transparent;
 
       & img {
@@ -149,7 +148,7 @@ main {
 
   & .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 100px 0px;
@@ -214,39 +213,45 @@ main {
 /* Parte inferior de la página */
 footer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   background-color: #03461b;
   color: white;
   padding: 10px 20px;
   flex-wrap: nowrap;
 
-  & p {
+  & .container {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    gap: 5px;
-  }
+    justify-content: space-between;
 
-  & nav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 30px;
-
-    & a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
+    & p {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 15px;
+      gap: 5px;
+    }
 
-      & i {
-        margin-right: 5px;
-        font-size: 16px;
+    & nav {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 30px;
+
+      & a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+          margin-right: 5px;
+          font-size: 16px;
+        }
       }
     }
   }
