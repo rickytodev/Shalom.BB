@@ -2,11 +2,11 @@
 header {
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 65px;
   background-color: white;
   color: white;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10px;
   overflow: hidden;
@@ -18,7 +18,6 @@ header {
   }
 
   & nav {
-    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -28,14 +27,62 @@ header {
       color: black;
       font-weight: 600;
       text-decoration: none;
+      position: relative;
+
+      & div {
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #1ed760;
+        bottom: -1px;
+        left: 0;
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        & div {
+          width: 100%;
+        }
+      }
     }
 
     & .btn {
-      display: flex;
-      background-color: #1ed760;
-      padding: 12px 20px;
-      border-radius: 6px;
-      gap: 5px;
+      border: solid 2px #1ed760;
+      padding: 13px 22px;
+      border-radius: 4px;
+      position: relative;
+      color: #1ed760;
+      overflow: hidden;
+
+      & span {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #1ed760;
+        transition: all 0.35s ease-in-out;
+      }
+
+      &:hover {
+        & span {
+          color: white;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -101,7 +148,7 @@ main {
   flex: 1;
 
   & .container {
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     display: flex;
     flex-direction: column;
@@ -168,7 +215,7 @@ main {
 footer {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   width: 100%;
   background-color: #03461b;
   color: white;
@@ -176,11 +223,14 @@ footer {
   flex-wrap: nowrap;
 
   & p {
-    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
   }
 
   & nav {
-    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -189,14 +239,14 @@ footer {
     & a {
       color: white;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 14px;
       display: flex;
       justify-content: center;
       align-items: center;
 
       & i {
         margin-right: 5px;
-        font-size: 22px;
+        font-size: 16px;
       }
     }
   }
